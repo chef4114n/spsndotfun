@@ -28,22 +28,6 @@ export default function Home() {
         }}
       />
 
-      {/* Navigation */}
-      <nav className="bg-orange-500 bg-opacity-95 backdrop-blur-sm text-black p-4 shadow-lg relative z-10 border-b-4 border-black">
-        <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-black drop-shadow-md">🏔️ South Park Sucks Now</h1>
-          <div className="space-x-6">
-            <Link href="/" className="hover:text-blue-600 transition-colors font-bold text-black">Home</Link>
-            <button 
-              onClick={() => setIsChartModalOpen(true)}
-              className="hover:text-blue-600 transition-colors bg-transparent border-none text-black cursor-pointer font-bold"
-            >
-              $SPSN Chart
-            </button>
-          </div>
-        </div>
-      </nav>
-
       {/* Full Screen Hero Section */}
       <section className="min-h-screen flex items-center justify-center px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
