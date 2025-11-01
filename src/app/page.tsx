@@ -29,42 +29,42 @@ export default function Home() {
       />
 
       {/* Full Screen Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-4 py-8 relative z-10">
+      <section className="h-screen flex items-center justify-center px-4 py-4 relative z-10 overflow-hidden">
         <div className="text-center max-w-4xl mx-auto">
           {/* SPSN Logo */}
-          <div className="mb-4 md:mb-6">
+          <div className="mb-2 md:mb-3">
             <Image
               src="/spsnlogo.png"
               alt="SPSN Logo"
-              width={150}
-              height={150}
-              className="mx-auto drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)] logo-flip md:w-[200px] md:h-[200px]"
+              width={120}
+              height={120}
+              className="mx-auto drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)] logo-flip md:w-[150px] md:h-[150px]"
               priority
             />
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-4 md:mb-6 drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)] text-stroke leading-tight south-park-font">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-2 md:mb-3 drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)] text-stroke leading-tight south-park-font">
             South Park 
             <br/>
             <span className="text-orange-400 block md:inline"> Sucks Now</span>
           </h1>
           
-          <p className="text-lg md:text-2xl lg:text-3xl text-white mb-3 md:mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] font-bold bg-blue-600 bg-opacity-80 rounded-lg p-2 md:p-3 inline-block border-4 border-black south-park-text">
+          <p className="text-base md:text-xl lg:text-2xl text-white mb-2 md:mb-3 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] font-bold bg-blue-600 bg-opacity-80 rounded-lg p-2 inline-block border-4 border-black south-park-text">
             "This isn't about a coin; it's about a movement!"
           </p>
-          <p className="text-sm md:text-xl lg:text-2xl text-orange-400 mb-3 md:mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] font-bold south-park-text">
+          <p className="text-sm md:text-lg lg:text-xl text-orange-400 mb-2 md:mb-3 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] font-bold south-park-text">
             - Kyle Broflovski
           </p>
           
-          <p className="text-sm md:text-lg lg:text-xl text-white mb-4 md:mb-6 max-w-3xl mx-auto drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] font-bold south-park-text">
+          <p className="text-sm md:text-base lg:text-lg text-white mb-3 md:mb-4 max-w-3xl mx-auto drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] font-bold south-park-text">
             Stan's trying to change our lives with cryptocurrency. Are you ready to ape in?
           </p>
 
           {/* Contract Address Section */}
-          <div className="bg-blue-600 bg-opacity-90 backdrop-blur-sm rounded-lg p-3 md:p-4 mb-4 md:mb-6 max-w-2xl mx-auto border-4 border-black shadow-lg">
-            <div className="text-white text-xs md:text-sm font-bold mb-2 bg-orange-500 rounded p-2 border-2 border-black south-park-text">Contract Address (CA):</div>
+          <div className="bg-blue-600 bg-opacity-90 backdrop-blur-sm rounded-lg p-2 md:p-3 mb-3 md:mb-4 max-w-2xl mx-auto border-4 border-black shadow-lg">
+            <div className="text-white text-xs md:text-sm font-bold mb-1 bg-orange-500 rounded p-1 md:p-2 border-2 border-black south-park-text">Contract Address (CA):</div>
             <div 
-              className="bg-white rounded-lg p-2 md:p-3 font-mono text-black text-xs md:text-sm lg:text-base break-all cursor-pointer hover:bg-gray-200 transition-colors border-2 border-black font-bold"
+              className="bg-white rounded-lg p-2 font-mono text-black text-xs md:text-sm break-all cursor-pointer hover:bg-gray-200 transition-colors border-2 border-black font-bold"
               onClick={() => {
                 navigator.clipboard.writeText('Sg4k4iFaEeqhv5866cQmsFTMhRx8sVCPAq2j8Xcpump');
                 // You could add a toast notification here
@@ -73,23 +73,23 @@ export default function Home() {
             >
               Sg4k4iFaEeqhv5866cQmsFTMhRx8sVCPAq2j8Xcpump
             </div>
-            <div className="text-white text-xs mt-2 text-center font-bold south-park-text">
+            <div className="text-white text-xs mt-1 text-center font-bold south-park-text">
               📋 Click to copy • Always verify before trading!
             </div>
           </div>
           
-          <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4 lg:gap-6">
+          <div className="flex flex-col sm:flex-row justify-center gap-2 md:gap-3">
             <a
               href="https://pump.fun/coin/Sg4k4iFaEeqhv5866cQmsFTMhRx8sVCPAq2j8Xcpump"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-orange-500 hover:bg-orange-600 text-black font-bold py-3 md:py-4 px-6 md:px-10 rounded-lg text-lg md:text-xl lg:text-2xl transition-colors shadow-lg transform hover:scale-105 border-4 border-black south-park-font"
+              className="bg-orange-500 hover:bg-orange-600 text-black font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg text-base md:text-lg lg:text-xl transition-colors shadow-lg transform hover:scale-105 border-4 border-black south-park-font"
             >
               🚀 Buy $SPSN Now!
             </a>
             <button 
               onClick={() => setIsChartModalOpen(true)}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 md:py-4 px-6 md:px-10 rounded-lg text-lg md:text-xl lg:text-2xl transition-colors shadow-lg transform hover:scale-105 border-4 border-black south-park-font"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg text-base md:text-lg lg:text-xl transition-colors shadow-lg transform hover:scale-105 border-4 border-black south-park-font"
             >
               📊 View Chart
             </button>
@@ -97,7 +97,7 @@ export default function Home() {
               href="https://x.com/i/communities/1984448414046704096"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 md:py-4 px-6 md:px-10 rounded-lg text-lg md:text-xl lg:text-2xl transition-colors shadow-lg transform hover:scale-105 border-4 border-black south-park-font"
+              className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg text-base md:text-lg lg:text-xl transition-colors shadow-lg transform hover:scale-105 border-4 border-black south-park-font"
             >
               🚀 Join the Movement
             </a>
