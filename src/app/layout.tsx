@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   title: "South Park Sucks Now - $SPSN | Official Parody Site",
   description: "This isn't about a coin; it's about a movement! Join Stan, Kyle, Cartman, and Kenny in the South Park Sucks Now crypto revolution. $SPSN to the moon!",
   keywords: "South Park, SPSN, crypto, parody, movement, Stan, Kyle, Cartman, Kenny, blockchain, meme coin",
+  icons: {
+    icon: [
+      { url: '/spsnlogo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/spsnlogo.png', sizes: '16x16', type: 'image/png' }
+    ],
+    apple: '/spsnlogo.png',
+    shortcut: '/spsnlogo.png'
+  },
 };
 
 export default function RootLayout({
@@ -30,6 +38,10 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Comic+Neue:wght@300;400;700&display=swap" 
           rel="stylesheet"
         />
+        <link rel="icon" type="image/png" sizes="32x32" href="/spsnlogo.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/spsnlogo.png" />
+        <link rel="apple-touch-icon" href="/spsnlogo.png" />
+        <link rel="shortcut icon" href="/spsnlogo.png" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {/* Background Overlay for readability */}
